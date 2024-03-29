@@ -1,0 +1,350 @@
+﻿@page
+
+@*@model joshankabir.Pages.دعای_جوشن_کبیرModel*@
+@{
+    Layout = null;
+}
+
+<style>
+    @@font-face{
+        font-family:"نستعلیق";
+        src:url("../fonts/IranNastaliq.ttf");
+    }
+     @@font-face{
+        font-family:"شکسته نستعلیق";
+        src:url("../fonts/Shekasteh.ttf");
+    }
+     @@font-face{
+        font-family:"معلی";
+        src:url("../fonts/Moalla.ttf");
+    }
+     @@font-face{
+        font-family:"ثلث";
+        src:url("../fonts/Suls.ttf");
+    }
+    body
+    {
+       background-image: url('../Images/background.JPG');
+       margin:0px;
+       padding:0px;
+    }
+    select
+    {
+        width:4em;
+        height:25px;
+        font-size:medium;
+        margin-top:15px;
+    }
+     p{
+        margin-left:10px;
+        margin-right:10px;
+       margin-top:0px;
+       margin-bottom:0px;
+        padding-top:0px;
+       padding-bottom:0px;
+    }
+    div{
+        margin:0px;
+        padding:0px;
+    }
+    #main{
+         margin-left:5%;
+        margin-right:5%;
+    }
+    .ar{
+         font-size:50px;
+        font-family:معلی;
+        text-shadow:0px 0px 5px darkred, 0px 0px 10px darkred, 0px 0px 15px darkred, 0px 0px 20px darkred;
+    }
+     .fa{
+          font-size:40px;
+         font-family:نستعلیق;
+        text-shadow:0px 0px 5px darkgreen, 0px 0px 10px darkgreen, 0px 0px 15px darkgreen, 0px 0px 20px darkgreen;
+    }
+</style>
+<nav dir="rtl"  style="width:100%;position:fixed;font-weight:bold;font-size:large;background:rgba(255,255,255,.75);height:55px">
+    <div style="width:100%;margin-right:10px;">
+       
+    <lable>عربی</lable>
+    <select id="ar" onchange="fontarchanged(this.value)">
+        <option selected value="معلی">معلی</option>
+        <option  value="ثلث">ثلث</option>
+         <option  value="نسخ">نسخ</option>
+    </select>
+     &nbsp; &nbsp; 
+     <lable>اندازه قلم</lable>
+    <select id="selectfontsizear" onchange="fontsizechangedar(this.value)" style="width:3em">
+        <option  value="30">30</option>
+        <option  value="40">40</option>
+        <option selected value="50">50</option>
+        <option  value="60">60</option>
+        <option  value="70">70</option>
+    </select>
+    &nbsp; &nbsp;
+     <lable>فارسی</lable>
+    <select id="fa" onchange="fontfachanged(this.value)">
+        <option selected value="نستعلیق">نستعلیق</option>
+        <option  value="شکسته نستعلیق">شکسته نستعلیق</option>
+         <option  value="نسخ">نسخ</option>
+    </select>
+     &nbsp; &nbsp; 
+     <lable>اندازه قلم</lable>
+    <select id="selectfontsizefa" onchange="fontsizechangedfa(this.value)" style="width:3em">
+        <option  value="30">30</option>
+        <option selected value="40">40</option>
+        <option  value="50">50</option>
+        <option  value="60">60</option>
+        <option  value="70">70</option>
+    </select>
+    
+    <audio name="adio" style="width:50%;float:left;margin-left:10px;" controls src="~/Audio/متن کامل دعای جوشن کبیر + ترجمه و صوت.mp3"></audio>
+   </div>
+</nav>
+<body >
+   <center> 
+       <img style="margin-top:80px;margin-bottom:70px;" src="../Images/جوشن کبیر.PNG" />
+    <div style="border:solid black 5px;" id="main" >
+       <div id="00"><p  class="ar"> بسم الله الرحمن الرحیم</p></div>
+       <div id="01">
+       <p class="ar" >سُبْحانَکَ یا لا اِلهَ اِلاّ اَنْتَ الْغَوْثَ الْغَوْثَ خَلِّصْنا مِنَ النّارِ یا رَبِّ </p>
+       <p class="fa" >منزهى تو اى که نیست معبودى جز تو ، فریاد فریاد  بِرَهان ما را از آتش اى پروردگار </p>
+       </div>
+       <p class="fa">(همچنین میتوان گفت) </p>
+      
+       <p class="ar" >سُبْحانَکَ یا لا اِلهَ اِلاّ اَنْتَ الْغَوْثَ الْغَوْثَ صَلِّ عَلى مُحَمَّدٍ وَآلِهِ وَ خَلِّصْنا مِنَ النّارِ یا رَبِّ یا ذَاالْجَلالِ وَالاْکْرامِ یا ارْحَمَ الرّاحِمینَ</p>
+       <p class="fa">
+        معبود منزهى تو اى که نیست معبودى جز تو ، فریاد فریاد درود فرست برمحمد و آلش و بِرَهان ما را از آتش اى پروردگار اى صاحب جلال و بزرگوارى اى مهربانترین مهربانان</p>
+        <div id="1">
+            <p class="ar" ><span class="1-1">اللَّهُمَّ إِنِّي أَسْأَلُكَ بِاسْمِكَ </span>&nbsp;<span class="1-2">يَا اللَّهُ </span>&nbsp;<span class="1-3">يَا رَحْمَانُ </span>&nbsp;<span class="1-4">يَا رَحِيمُ</span>&nbsp;<span class="1-5">يَا كَرِيمُ</span>&nbsp;<span class="1-6">يَا مُقِيمُ</span>&nbsp;<span class="1-7">يَا عَظِيمُ</span>&nbsp;<span class="1-8">يَا قَدِيمُ</span>&nbsp;<span class="1-9">يَا عَلِيمُ</span>&nbsp;<span class="1-10">يَا حَلِيمُ</span>&nbsp;<span class="1-11">يَا حَكِيمُ</span>&nbsp;<span class="1-12">(سُبْحَانَكَ يَا لا إِلَهَ إِلا أَنْتَ الْغَوْثَ الْغَوْثَ خَلِّصْنَا مِنَ النَّارِ يَا رَبِّ)</span>&nbsp;(1)</p>
+            <p class="fa"><span class="1-1">تورا به حق نامت</span >&nbsp;<span class="1-2">اي خداي</span>&nbsp;<span class="1-3">بخشنده و</span>&nbsp;<span class="1-4">مهربان</span>،&nbsp;<span class="1-5">اي بزرگوار</span>،&nbsp;<span class="1-6">اي برپا دارنده </span>،&nbsp;<span class="1-7"> ای بزرگ</span>،&nbsp; <span class="1-8">اي قديم</span>،&nbsp;<span class="1-9">اي دانا</span>،&nbsp;<span class="1-10">اى بردبار</span>،&nbsp;<span class="1-11">اى فرزانه </span>&nbsp;<span class="1-12">(تو معبود منزهي از آتش دوزخ به تو پناه ميبرم كه پناه دهنده بي پناهاني)</span></p> 
+        </div>
+        <div id="2">
+            <p class="ar" ><span class="2-1"> يَا سَيِّدَ السَّادَاتِ</span>&nbsp;<span class="2-2">يَا مُجِيبَ الدَّعَوَاتِ </span>&nbsp;<span class="2-3">يَا رَافِعَ الدَّرَجَاتِ  </span>&nbsp;<span class="2-4"> يَا وَلِيَّ الْحَسَنَاتِ  </span>&nbsp;<span class="2-5"> يَا غَافِرَ الْخَطِيئَاتِ </span>&nbsp;<span class="2-6">  يَا مُعْطِيَ الْمَسْأَلاتِ</span>&nbsp;<span class="2-7">يَا قَابِلَ التَّوْبَاتِ  </span>&nbsp;<span class="2-8"> يَا سَامِعَ الْأَصْوَاتِ  </span>&nbsp;<span class="2-9"> يَا عَالِمَ الْخَفِيَّاتِ </span>&nbsp;<span class="2-10">يَا دَافِعَ الْبَلِيَّاتِ </span>&nbsp;(2)</p>
+            <p class="fa"><span class="2-1">اى آقاى آقایان</span >&nbsp;<span class="2-2"> اى اجابت کننده دعاها</span>&nbsp;<span class="2-3">  اى بالا برنده مرتبه ها</span>،&nbsp;<span class="2-4">اى صاحب هر نیکى</span>،&nbsp;<span class="2-5">اى آمرزنده گناهان </span>،&nbsp;<span class="2-6"> اى دهنده خواسته ها  </span>،&nbsp;<span class="2-7"> اى پذیرنده توبه ها  </span>،&nbsp; <span class="2-8">اى شنونده صداها </span>،&nbsp;<span class="2-9">اى داناى اسرار پنهانى </span>،&nbsp;<span class="2-10">اى برطرف کننده بلاها </span></p> 
+        </div>
+        <div id="3">
+            <p class="ar" ><span class="3-1">يَا خَيْرَ الْغَافِرِينَ</span>&nbsp;<span class="3-2">يَا خَيْرَ الْفَاتِحِينَ</span>&nbsp;<span class="3-3">يَا خَيْرَ النَّاصِرِينَ  </span>&nbsp;<span class="3-4">يَا خَيْرَ الْحَاكِمِينَ </span>&nbsp;<span class="3-5">يَا خَيْرَ الرَّازِقِينَ  </span>&nbsp;<span class="3-6">  يَا خَيْرَ الْوَارِثِينَ </span>&nbsp;<span class="3-7"> يَا خَيْرَ الْحَامِدِينَ </span>&nbsp;<span class="3-8">يَا خَيْرَ الذَّاكِرِينَ </span>&nbsp;<span class="3-9">يَا خَيْرَ الْمُنْزِلِينَ </span>&nbsp;<span class="3-10"> يَا خَيْرَ الْمُحْسِنِينَ </span>&nbsp;(3)</p>
+            <p class="fa"><span class="3-1">اى بهترین آمرزندگان</span >،&nbsp;<span class="3-2">اى بهترین گشایندگان </span>،&nbsp;<span class="3-3"> اى بهترین یاران</span>،&nbsp;<span class="3-4">اى بهترین حاکمان</span>،&nbsp;<span class="3-5"> اى بهترین روزى دهندگان </span>،&nbsp;<span class="3-6"> اى بهترین ارث بران  </span>،&nbsp;<span class="3-7"> اى بهترین ستایشگران  </span>،&nbsp; <span class="3-8">اى بهترین یادکنندگان </span>،&nbsp;<span class="3-9"> اى بهترین فرو فرستندگان</span>،&nbsp;<span class="3-10">اى بهترین احسان کنندگان </span>،&nbsp;</p> 
+        </div>
+        <div id="">
+            <p class="ar" ><span class="-1"></span>&nbsp;<span class="-2"></span>&nbsp;<span class="-3">  </span>&nbsp;<span class="-4"> </span>&nbsp;<span class="-5"> </span>&nbsp;<span class="-6"> </span>&nbsp;<span class="-7"> </span>&nbsp;<span class="-8"> </span>&nbsp;<span class="-9"> </span>&nbsp;<span class="-10"> </span>&nbsp;<span class="-11"> </span>&nbsp;()</p>
+            <p class="fa"><span class="-1"></span >،&nbsp;<span class="-2"> </span>،&nbsp;<span class="-3"> </span>،&nbsp;<span class="-4"></span>،&nbsp;<span class="-5"> </span>،&nbsp;<span class="-6">   </span>،&nbsp;<span class="-7">  </span>،&nbsp; <span class="-8"> </span>،&nbsp;<span class="-9"> </span>،&nbsp;<span class="-10"> </span>،&nbsp;<span class="-11"></span>&nbsp;</p> 
+        </div>
+</center>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+           setInterval(()=>{
+               var audio=document.getElementsByTagName("audio")[0];
+               var time= audio.currentTime;
+               if(time>="0"&&time<"1"){
+                   audio.currentTime="233";
+               }
+              if(time>"100" && time<"108"){
+                 go("00");
+                
+              }
+              else if(time>"108"&&time<"128"){
+                 removebold("00");
+                  go("01");
+                 
+              }
+              else if(time>="128"&&time<="178"){
+                 
+                  if(time>="128"&&time<"136"){
+                      removebold("01");
+                      go("1");
+                      hilight("1-1");
+                  }
+                  else if(time>="136"&&time<"139"){
+                     removehighlight("1-1");
+                     hilight("1-2");
+                  }
+                  else if(time>="139"&&time<"142"){
+                     removehighlight("1-2");
+                     hilight("1-3");
+                  }
+                   else if(time>="142"&&time<"144"){
+                     removehighlight("1-3");
+                     hilight("1-4");
+                  }
+                   else if(time>="144"&&time<"147"){
+                     removehighlight("1-4");
+                     hilight("1-5");
+                  } else if(time>="147"&&time<"150"){
+                     removehighlight("1-5");
+                     hilight("1-6");
+                  }
+                  else if(time>="150"&&time<"152"){
+                     removehighlight("1-6");
+                     hilight("1-7");
+                  }
+                  else if(time>="152"&&time<"155"){
+                     removehighlight("1-7");
+                     hilight("1-8");
+                  }
+                  else if(time>="155"&&time<"158"){
+                     removehighlight("1-8");
+                     hilight("1-9");
+                  }
+                   else if(time>="158"&&time<"160"){
+                     removehighlight("1-9");
+                     hilight("1-10");
+                  }
+                   else if(time>="160"&&time<"162"){
+                     removehighlight("1-10");
+                     hilight("1-11");
+                  }
+                  else if(time>="161"&&time<"177"){
+                     removehighlight("1-11");
+                     hilight("1-12");
+                  }
+                  else if(time>"177"&&time<="178"){
+                      removehighlight("1-12");
+                      removebold("1");
+                      
+                  }
+                
+              }
+              else if(time>178&&time<222){
+                  if(time>178&&time<182){
+                      go("2");
+                      hilight("2-1");
+                  }
+                  else if(time>=182&&time<186){
+                      removehighlight("2-1");
+                      hilight("2-2");
+                  }
+                  else if(time>=186&&time<190){
+                      removehighlight("2-2");
+                      hilight("2-3");
+                  }
+                   else if(time>=190&&time<194){
+                      removehighlight("2-3");
+                      hilight("2-4");
+                  }
+                  else if(time>=194&&time<198){
+                      removehighlight("2-4");
+                      hilight("2-5");
+                  }
+                  else if(time>=198&&time<202){
+                      removehighlight("2-5");
+                      hilight("2-6");
+                  }
+                  else if(time>=202&&time<206){
+                      removehighlight("2-6");
+                      hilight("2-7");
+                  }
+                  else if(time>=206&&time<210){
+                      removehighlight("2-7");
+                      hilight("2-8");
+                  }
+                  else if(time>=210&&time<214){
+                      removehighlight("2-8");
+                      hilight("2-9");
+                  }
+                  else if(time>=214&&time<218){
+                      removehighlight("2-9");
+                      hilight("2-10");
+                  }
+                  else if(time>=218&&time<222){
+                      removehighlight("2-10");
+                     removebold("2");
+                  }
+              }
+              else if(time>=233&&time<283){
+                  if(time>=233&&time<236){
+                      go("3");
+                      hilight("3-1");
+                  }
+                  else if(time>=236&&time<240){
+                      hilight("3-2");
+                      removehighlight("3-1");
+                  }
+                   else if(time>=240&&time<244){
+                      hilight("3-3");
+                      removehighlight("3-2");
+                  }
+                   else if(time>=244&&time<247){
+                      hilight("3-4");
+                      removehighlight("3-3");
+                  }
+                   else if(time>=247&&time<251){
+                      hilight("3-5");
+                      removehighlight("3-4");
+                  }
+                   else if(time>=251&&time<255){
+                      hilight("3-6");
+                      removehighlight("3-5");
+                  }
+                   else if(time>=255&&time<258){
+                      hilight("3-7");
+                      removehighlight("3-6");
+                  }
+                  else if(time>=258&&time<261){
+                      hilight("3-8");
+                      removehighlight("3-7");
+                  }
+                  else if(time>=261&&time<264){
+                      hilight("3-9");
+                      removehighlight("3-8");
+                  }
+                  else if(time>=264&&time<268){
+                      hilight("3-10");
+                      removehighlight("3-9");
+                  }
+                  else if(time>=268&&time<283){
+                     removebold("3");
+                      removehighlight("3-10");
+                  }
+              }
+              
+           },1000);
+          function hilight(cls){
+               $("."+cls).css("text-shadow","0px 0px 5px yellow,0px 0px 10px yellow,0px 0px 15px yellow,0px 0px 20px yellow,0px 0px 25px yellow");
+              // $(".ar ."+class).css("text-shadow","0px 0px 5px yellow,0px 0px 10px yellow,0px 0px 15px yellow,0px 0px 20px yellow,0px 0px 25px yellow");
+           };
+           function removehighlight(cls){
+               $(".ar ."+cls).css("text-shadow","0px 0px 5px darkred,0px 0px 10px darkred,0px 0px 15px darkred,0px 0px 20px darkred");
+               $(".fa ."+cls).css("text-shadow","0px 0px 5px darkgreen,0px 0px 10px darkgreen,0px 0px 15px darkgreen,0px 0px 20px darkgreen");
+           };
+           function removebold(id){
+               var element= document.getElementById(id);
+               element.style.backgroundColor="";
+           };
+        function go(id){
+            $("#"+id).css("scroll-margin","55px");
+            var element= document.getElementById(id);
+           element.scrollIntoView({ 
+                    behavior: 'smooth' ,block:"start"});
+           
+            bold(id);     
+        }
+        function bold(id){
+           
+             $("#"+id).css("background","rgba(0,0,100,.5)");
+             
+        };
+        function fontsizechangedar(size){
+           
+           $(".ar").css("font-size",size);
+        };
+        function fontsizechangedfa(size){
+           
+           $(".fa").css("font-size",size);
+        };
+         function fontarchanged(font){
+            if(font=="نسخ"){
+               font="Arial";
+             }
+           $(".ar").css("font-family",font);
+        };
+         function fontfachanged(font){
+             if(font=="نسخ"){
+               font="Arial";
+             }
+          
+           $(".fa").css("font-family",font);
+        };
+       
+</script>
